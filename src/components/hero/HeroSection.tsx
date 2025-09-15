@@ -17,9 +17,9 @@ const HeroSection = () => {
 
   return (
     <div className="w-full h-auto  flex flex-col justify-start items-start ">
-      <div className="flex w-[40vw] overflow-hidden items-end  absolute bottom-0 right-3/6 group">
-        <div className="absolute  w-full h-1/3  bg-gradient-to-t z-10 from-[#f8f8f8] to-transparent"></div>
-        <img src="/hand.avif" alt="" className="mix-blend-darken " />
+      <div className="flex w-[32vw] overflow-hidden items-end  absolute bottom-0 right-[55vw] group">
+        <div className="absolute  w-2/3 h-1/3  bg-gradient-to-t z-10 from-[#f8f8f8] to-transparent"></div>
+        <img src="/hand.png" alt="" className="mix-blend-darken mr-1" />
       </div>
       {/* Right vertical line */}
       <motion.span

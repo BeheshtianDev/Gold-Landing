@@ -57,11 +57,11 @@ const StatsCard = () => {
   }, []);
 
   return (
-    <div className="w-[65vw] h-[20vw] py-[5vw] grid z-20 grid-cols-6  relative mr-[17.5vw] gap-2 mt-[19vh] text-[#111111]/90 overflow-hidden">
+    <div className="w-[65vw] h-[15vw] py-[2vw] grid z-20 grid-cols-6  relative mr-[17.5vw] gap-2 mt-[22vh] text-[#111111]/90 overflow-hidden">
       {/* 500+ */}
       <motion.div
-        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-5 flex flex-col gap-5"
-        animate={{ y: scrolled ? "-25vh" : "0vh" }}
+        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-5"
+        animate={{ y: scrolled ? "-35vh" : "0vh" }}
         transition={{ duration: 0.5, ease: "easeIn" }}
       >
         <Counter to={500} suffix="+" />
@@ -71,7 +71,7 @@ const StatsCard = () => {
       {/* ۹۸٪ */}
       <motion.div
         className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
-        animate={{ y: scrolled ? "-25vh" : "0vh" }}
+        animate={{ y: scrolled ? "-35vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.2, ease: "easeIn" }}
       >
         <Counter to={98} suffix="٪" />
@@ -83,7 +83,7 @@ const StatsCard = () => {
       {/* ۲۰۰۰+ */}
       <motion.div
         className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
-        animate={{ y: scrolled ? "-25vh" : "0vh" }}
+        animate={{ y: scrolled ? "-35vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
       >
         <Counter to={2000} suffix="+" />
@@ -93,7 +93,7 @@ const StatsCard = () => {
       {/* ۲۵+ */}
       <motion.div
         className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
-        animate={{ y: scrolled ? "-25vh" : "0vh" }}
+        animate={{ y: scrolled ? "-35vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeIn" }}
       >
         <Counter to={25} suffix="+" />
