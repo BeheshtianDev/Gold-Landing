@@ -57,47 +57,47 @@ const StatsCard = () => {
   }, []);
 
   return (
-    <div className="w-[65vw] h-[240px] py-5 grid z-20 grid-cols-6  relative mr-[17.5vw] gap-2 mt-56 text-[#111111]/90 overflow-hidden">
+    <div className="w-[65vw] h-[20vw] py-[5vw] grid z-20 grid-cols-6  relative mr-[17.5vw] gap-2 mt-[19vh] text-[#111111]/90 overflow-hidden">
       {/* 500+ */}
       <motion.div
-        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-5xl p-5 flex flex-col gap-5"
+        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-5 flex flex-col gap-5"
         animate={{ y: scrolled ? "-25vh" : "0vh" }}
         transition={{ duration: 0.5, ease: "easeIn" }}
       >
         <Counter to={500} suffix="+" />
-        <span className="text-xl font-light">مشتری خوشحال و وفادار</span>
+        <span className="text-[1vw] font-light">مشتری خوشحال و وفادار</span>
       </motion.div>
 
       {/* ۹۸٪ */}
       <motion.div
-        className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-5xl p-5 flex flex-col gap-5"
+        className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
         animate={{ y: scrolled ? "-25vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.2, ease: "easeIn" }}
       >
         <Counter to={98} suffix="٪" />
-        <span className="text-xl font-light">
+        <span className="text-[1vw] font-light">
           رضایت <br /> از کیفیت و خدمات
         </span>
       </motion.div>
 
       {/* ۲۰۰۰+ */}
       <motion.div
-        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-5xl p-5 flex flex-col gap-5"
+        className="col-span-2 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
         animate={{ y: scrolled ? "-25vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
       >
         <Counter to={2000} suffix="+" />
-        <span className="text-xl font-light">زیور دست‌ساز منحصربه‌فرد</span>
+        <span className="text-[1vw] font-light">زیور دست‌ساز منحصربه‌فرد</span>
       </motion.div>
 
       {/* ۲۵+ */}
       <motion.div
-        className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-5xl p-5 flex flex-col gap-5"
+        className="col-span-1 shadow-lg backdrop-blur-lg border border-[#111111]/30 rounded-xl text-[2.5vw] p-[1vw] flex flex-col gap-[1vw]"
         animate={{ y: scrolled ? "-25vh" : "0vh" }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeIn" }}
       >
         <Counter to={25} suffix="+" />
-        <span className="text-xl font-light">
+        <span className="text-[1vw] font-light">
           ارسال به <br />
           شهر سرار ایران
         </span>
