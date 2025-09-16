@@ -31,17 +31,17 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 0, }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-50 bg-black/20 flex justify-center items-center"
             onClick={() => setOpen(false)} // click outside closes
           >
             {/* Modal */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.5, y: -50 }}
+              initial={{ opacity: 0, scale: 0, y: -50 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.5, y: -50 }}
-              transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+              exit={{ opacity: 0, scale: 0, y: -50 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               className="w-[60vw] h-[80vh] backdrop-blur-2xl overflow-hidden 
                          backdrop-brightness-[50%] flex justify-start border border-black/10 items-center 
  rounded-2xl relative z-50 shadow-xl"
