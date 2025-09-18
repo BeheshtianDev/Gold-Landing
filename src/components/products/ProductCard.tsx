@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   previewImg,
 }) => {
   return (
-    <div className="h-[440px] w-[350px] lg:hover:w-[700px] lg:hover:h-[350px] gap-5 group bg-white  overflow-hidden transition-all duration-700  rounded-3xl border border-[#111111]/7 flex flex-col justify-center cursor-pointer items-center relative">
+    <div className="h-[440px] w-[350px] lg:hover:w-[700px] shrink-0 lg:hover:h-[350px] gap-5 group bg-white  overflow-hidden transition-all duration-700  rounded-3xl border border-[#111111]/7 flex flex-col justify-center cursor-pointer items-center relative">
       {/* Preview Image */}
       <Image
         src={previewImg}

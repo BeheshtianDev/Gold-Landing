@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Menu from "../Menu";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-50 bg-black/20 flex justify-center items-center"
             onClick={() => setOpen(false)} // click outside closes
