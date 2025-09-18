@@ -9,9 +9,7 @@ export default function Home() {
     <div className="  w-full h-auto flex flex-col justify-center items-center">
       <HeroSection />
       <Products />
-      <Circle/>
-      <Gallery/>
-      <Faq/>
+      <Gallery />
     </div>
   );
 }

@@ -49,11 +49,11 @@ const HeroSection = () => {
           کلکسیونی از طلاهای دست‌ساز و مدرن
         </span>
         <div className="flex justify-start gap-3 items-center lg:mt-7 mt-10">
-          <button className="lg:w-40 w-28 lg:h-12 h-10 bg-[#111111] group hover:text-[#111111] rounded-full  shadow-lg  shadow-black/40 border border-[#111111] hover:border-[#111111]/20 hover:bg-[#f8f8f8]  cursor-pointer transition-all duration-300 overflow-hidden flex gap-6 flex-col lg:text-base text-xs justify-start pt-2.5 delay-100 items-center">
-            <p className="group-hover:-translate-y-12 delay-100 transition-all duration-300">
+          <button className="lg:w-40 w-28 lg:h-12 h-10 bg-[#111111] group md:hover:text-[#111111] rounded-full  shadow-lg  shadow-black/40 border border-[#111111] md:hover:border-[#111111]/20 md:hover:bg-[#f8f8f8]  cursor-pointer transition-all duration-300 overflow-hidden flex lg:gap-6 gap-8 flex-col lg:text-base text-xs justify-start pt-2.5 delay-100 items-center">
+            <p className="md:group-hover:-translate-y-12 delay-100 transition-all duration-300">
               سفارش اختصاصی
             </p>
-            <p className="group-hover:-translate-y-12 delay-100 transition-all duration-300">
+            <p className="md:group-hover:-translate-y-12 delay-100 transition-all duration-300">
               سفارش اختصاصی
             </p>
           </button>

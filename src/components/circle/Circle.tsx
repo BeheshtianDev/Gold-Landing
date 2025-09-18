@@ -11,31 +11,50 @@ const Circle = () => {
 
   useEffect(() => {
     if (!circleRef.current) return;
-
     const el = circleRef.current;
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: el.parentElement,
-        start: "top+=200px bottom",
-        end: "center center",
-        scrub: 1, // adds smooth catch-up effect
-        toggleActions: "play reverse play reverse",
-      },
-    });
+    // Expand on entering the section
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: el.parentElement,
+          start: "top+=300px bottom", // when section enters
+          end: "center center",
+          scrub: 2,
+        },
+      })
+      .to(el, {
+        width: "100vw",
+        height: "100vw",
+        borderRadius: "50%",
+        scale: 1.5,
+      })
+      .to(el, {
+        height: "500vh",
+        borderRadius: "0",
+      });
 
-    // Stage 1: expand into a full circle
-    tl.to(el, {
-      width: "100vw",
-      height: "100vw",
-      borderRadius: "50%",
-    });
-
-    // Stage 2: flatten bottom corners
-    tl.to(el, {
-      borderRadius: "0%",
-      ease: "power2.inOut", // smooth curve
-    });
+    // Shrink back on leaving the section
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: el.parentElement,
+          start: "center top", // when bottom hits center
+          end: "bottom top", // leaving viewport
+          scrub: 1,
+        },
+      })
+      .to(el, {
+        width: "100vw",
+        height: "100vw",
+        borderRadius: "100%",
+      })
+      .to(el, {
+        width: "100vw",
+        height: "100vw",
+        borderRadius: "100%",
+        scale: 2,
+      });
 
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
@@ -43,8 +62,17 @@ const Circle = () => {
   }, []);
 
   return (
-    <div className="w-full h-[200vh] flex justify-center items-start overflow-hidden relative bg-transparent">
-      <div ref={circleRef} className="w-5 h-5 rounded-full bg-[#111111]"></div>
+    <div className="w-full h-[500vh] flex justify-center items-start overflow-hidden relative text-white">
+      <div className="w-full h-full flex justify-center items-center absolute z-50">
+        qfwqfewqf
+      </div>
+
+      <div
+        ref={circleRef}
+        className="w-2 h-2 rounded-full bg-[#111111] mt-80 flex justify-center items-center absolute"
+      >
+        <div className="w-2 h-2 bg-red-500"></div>
+      </div>
     </div>
   );
 };
