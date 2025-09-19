@@ -15,7 +15,7 @@
     --background: #f8f8f8;
   }
 }
-
+html,
 body {
   scrollbar-width: none; /* For Firefox */
   background: var(--background);
@@ -23,4 +23,13 @@ body {
 }
 *::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
+}
+@layer utilities {
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
