@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card"; // import reusable Card
+import ProggresCircle from "./ProggresCircle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,7 +22,7 @@ const Gallery = () => {
       scrollTrigger: {
         trigger: el,
         start: "top top-=500px",
-        end: "bottom-=500px bottom",
+        end: "bottom bottom",
         toggleActions: "play reverse play reverse",
       },
     });
@@ -58,9 +59,9 @@ const Gallery = () => {
   return (
     <div
       ref={sectionRef}
-      className="w-full lg:h-[800vh] h-[900vh] relative flex justify-center items-center flex-col"
+      className="w-full lg:h-[1500vh] h-[900vh] relative flex justify-start items-center flex-col"
     >
-      <div className="w-10/12 flex flex-col lg:gap-80 gap-20">
+      <div className="w-10/12 flex flex-col lg:gap-80 gap-20 mt-[1000px]">
         {/* Row 1 */}
         <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
           <Card
@@ -141,6 +142,7 @@ const Gallery = () => {
           />
         </div>
       </div>
+      <ProggresCircle/>
     </div>
   );
 };

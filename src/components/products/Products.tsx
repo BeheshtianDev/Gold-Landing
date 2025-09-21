@@ -69,7 +69,7 @@ const Products = () => {
       {/* Scrollable Container */}
       <div
         ref={scrollContainerRef}
-        className="flex w-[90vw] items-center scro *:  overflow-scroll scroll-hidden  lg:gap-[3.5vw] gap-[12vw] rounded-2xl scroll-smooth"
+    className="flex w-[90vw] items-center scro *:  overflow-scroll scroll-hidden        lg:gap-[3.5vw] gap-[12vw] rounded-2xl scroll-smooth"
       >
         {/* Product Cards */}
         <ProductCard
