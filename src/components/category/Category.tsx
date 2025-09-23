@@ -3,15 +3,15 @@ import React from "react";
 
 const Category = () => {
   return (
-    <div className="h-[120vh] w-full flex justify-end flex-col items-center gap-10">
-      <div className="w-4/5  h-4/5  bg-white rounded-2xl grid grid-rows-2 grid-cols-3 gap-2 p-2">
-        <div className="row-start-1 justify-items-center relative overflow-hidden rounded-2xl col-start-1 group col-span-2 ">
+    <div className="lg:h-[120vh] h-[200vh]  w-full flex justify-end flex-col items-center gap-10">
+      <div className="w-4/5  lg:h-4/5 h-5/6  bg-white rounded-2xl grid lg:grid-rows-2 grid-rows-4 lg:grid-cols-3 grid-cols-1 gap-2 p-2">
+        <div className="lg:row-start-1 justify-items-center relative overflow-hidden rounded-2xl lg:col-start-1 group lg:col-span-2 ">
           <Image
-            src="/ring-2.webp"
+            src="/ring-2.png"
             alt=""
-            width={600}
+            width={5000}
             height={400}
-            className="w-full h-full object-cover absolute peer object-bottom hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
+            className="w-full h-full object-cover pic absolute peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
             priority
           />
           <div className="w-full h-[75px]    px-2  rounded-2xl    lg:translate-y-40 absolute bottom-2 ease-out peer-hover:translate-y-0 hover:translate-y-0 transition-all duration-500">
@@ -35,13 +35,13 @@ const Category = () => {
             </div>
           </div>
         </div>
-        <div className="row-start-1 justify-items-center relative overflow-hidden rounded-2xl col-start-3 group col-span-1 ">
+        <div className="lg:row-start-1 justify-items-center relative overflow-hidden rounded-2xl lg:col-start-3 group lg:col-span-1 ">
           <Image
-            src="/chain.jpg"
+            src="/chain.png"
             alt=""
             width={600}
             height={400}
-            className="w-full h-full object-cover peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
+            className="w-full h-full object-cover pic peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
             priority
           />
           <div className="w-full h-[75px]    px-2  rounded-2xl    lg:translate-y-40 absolute bottom-2 ease-out peer-hover:translate-y-0 hover:translate-y-0 transition-all duration-500">
@@ -65,13 +65,13 @@ const Category = () => {
             </div>
           </div>
         </div>
-        <div className="row-start-2 justify-items-center relative overflow-hidden rounded-2xl col-start-1 group col-span-1 ">
+        <div className="lg:row-start-2 justify-items-center relative overflow-hidden rounded-2xl lg:col-start-1 group lg:col-span-1 ">
           <Image
-            src="/model-3.jpg"
+            src="/model-3.png"
             alt=""
             width={600}
             height={400}
-            className="w-full h-full object-cover peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
+            className="w-full h-full object-cover pic peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
             priority
           />
           <div className="w-full h-[75px]    px-2  rounded-2xl    lg:translate-y-40 absolute bottom-2 ease-out peer-hover:translate-y-0 hover:translate-y-0 transition-all duration-500">
@@ -95,13 +95,13 @@ const Category = () => {
             </div>
           </div>
         </div>
-        <div className="row-start-2 justify-items-center relative overflow-hidden rounded-2xl col-start-2 group col-span-2 ">
+        <div className="lg:row-start-2 justify-items-center relative overflow-hidden rounded-2xl lg:col-start-2 group lg:col-span-2 ">
           <Image
-            src="/model-4.webp"
+            src="/model-4.png"
             alt=""
-            width={600}
+            width={5000}
             height={400}
-            className="w-full h-full object-cover peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
+            className="w-full h-full object-cover pic peer object-center hover:scale-100 group-hover:scale-100 lg:scale-110 transition-all  duration-500 ease-out cursor-pointer"
             priority
           />
           <div className="w-full h-[75px]    px-2  rounded-2xl    lg:translate-y-40 absolute bottom-2 ease-out peer-hover:translate-y-0 hover:translate-y-0 transition-all duration-500">

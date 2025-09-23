@@ -84,7 +84,7 @@ export default function ProgressCircle() {
   }, []);
 
   return (
-    <div className="sticky-wrapper w-full relative h-[1000px] flex  justify-center items-center">
+    <div className="sticky-wrapper w-full relative h-screen flex text-[#111111]/90  justify-center items-center">
       {/* Circle */}
       <svg width="780" height="780" viewBox="0 0 780 780" className="absolute">
         <circle

@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ variant, number, image, title }) => {
         variant === "square"
           ? "lg:w-[500px] w-[350px] lg:h-[500px] h-[400px]"
           : "lg:w-[550px] w-[350px] lg:h-[600px] h-[500px]"
-      } ease-out relative group transition-all duration-300 cursor-pointer   `}
+      } ease-out relative group transition-all duration-300 cursor-pointer  pic `}
     >
       {/* number (always visible, no hover effect) */}
       <span className="absolute left-0 top-0 text-3xl -translate-y-14 text-white pointer-events-none select-none group-hover:opacity-0 transition-all duration-300">

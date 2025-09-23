@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Menu from "@/components/Menu";
+import CustomCursor from "@/components/CustomCursor";
 const peyda = localFont({
   src: [
     {
@@ -66,7 +67,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={peyda.variable}>
+      <body className={peyda.variable} suppressHydrationWarning>
+        <CustomCursor/>
         <Header />
         {children}
       </body>

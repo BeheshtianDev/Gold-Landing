@@ -2,7 +2,6 @@
 import StatsCard from "./StatsCard";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const HeroSection = () => {
   const [scrolled, setScrolled] = useState(false);
