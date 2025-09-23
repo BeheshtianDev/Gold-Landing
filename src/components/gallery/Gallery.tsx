@@ -22,7 +22,7 @@ const Gallery = () => {
       scrollTrigger: {
         trigger: el,
         start: "top top-=500px",
-        end: "bottom bottom",
+        end: "bottom-=500px bottom",
         toggleActions: "play reverse play reverse",
       },
     });
@@ -59,12 +59,12 @@ const Gallery = () => {
   return (
     <div
       ref={sectionRef}
-      className="w-full lg:h-[700vh] h-[900vh] relative flex justify-start items-center flex-col "
+      className="w-full lg:h-[6500px]  h-[900vh] relative flex justify-start items-center flex-col "
     >
       <Faq/>
       <div className="w-10/12 flex flex-col lg:gap-80 gap-20 mt-[400px]">
         {/* Row 1 */}
-        <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
+        <div className="flex justify-between flex-col lg:flex-row lg:gap-10 gap-20 lg:items-end items-center gallery-row">
           <Card
             variant="square"
             number={1}
@@ -80,7 +80,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
+        <div className="flex justify-between flex-col lg:flex-row lg:gap-10 gap-20 lg:items-end items-center gallery-row">
           <Card
             variant="square"
             number={3}
@@ -96,7 +96,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 3 */}
-        <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
+        <div className="flex justify-between flex-col lg:flex-row lg:gap-10 gap-20 lg:items-end items-center gallery-row">
           <Card
             variant="square"
             number={5}
@@ -112,7 +112,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 4 */}
-        <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
+        <div className="flex justify-between flex-col lg:flex-row lg:gap-10 gap-20 lg:items-end items-center gallery-row">
           <Card
             variant="square"
             number={7}
@@ -128,7 +128,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 5 */}
-        <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-20 lg:items-end items-center gallery-row">
+        <div className="flex justify-between flex-col lg:flex-row lg:gap-10 gap-20 lg:items-end items-center gallery-row">
           <Card
             variant="square"
             number={9}

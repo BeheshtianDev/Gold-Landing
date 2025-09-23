@@ -14,7 +14,7 @@ export default function Home() {
       <Products />
       <Gallery />
       <ProgressCircle />
-      <div className="w-full h-[500vh]"></div>
+      <div className="w-full h-[5100px]"></div>
       <Comments />
       <Footer />
     </div>

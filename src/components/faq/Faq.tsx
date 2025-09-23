@@ -66,7 +66,7 @@ const Faq = () => {
   return (
     <div className="w-full h-screen flex mt-[5vw] text-black">
       {/* Left: FAQ Accordions */}
-      <div className="faq lg:w-1/2 w-full h-full flex flex-col justify-start  items-start overflow-y-auto lg:pr-40 lg:px-0 px-5">
+      <div className="faq lg:w-1/2 w-full h-full flex flex-col justify-start  items-start overflow-y-auto lg:pr-[5vw] lg:px-0 px-5">
         <div
           className="w-full   
      border-[#111111]/7  rounded-2xl  flex justify-center gap-2 px-5  items-center flex-col"

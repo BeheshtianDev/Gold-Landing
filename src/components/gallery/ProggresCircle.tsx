@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -34,6 +34,17 @@ const steps = [
 ];
 
 export default function ProgressCircle() {
+  const [scale, setScale] = useState(0.5);
+
+  useEffect(() => {
+    const updateScale = () => {
+      setScale(window.innerHeight / 950); // 780 is your SVG base height
+    };
+
+    updateScale();
+    window.addEventListener("resize", updateScale);
+    return () => window.removeEventListener("resize", updateScale);
+  }, []);
   useEffect(() => {
     const circle = document.querySelector(".progress-path") as SVGPathElement;
     const dots = gsap.utils.toArray<HTMLElement>(".step-dot");
@@ -94,6 +105,8 @@ export default function ProgressCircle() {
           stroke="#B3B3B3"
           strokeWidth="2"
           fill="none"
+          className=" origin-center"
+          style={{ transform: `scale(${scale})` }}
         />
         <circle
           cx="390"
@@ -102,12 +115,16 @@ export default function ProgressCircle() {
           stroke="#FFD700"
           strokeWidth="2"
           fill="none"
-          className="progress-path -rotate-90 origin-center"
+          className="progress-path -rotate-90 origin-center "
+          style={{ transform: `scale(${scale})` }}
         />
       </svg>
 
       {/* Step Dots */}
-      <div className="absolute w-full h-full flex justify-center rotate-[270deg] items-center">
+      <div
+        className="absolute w-full h-full flex justify-center rotate-[270deg] items-center "
+        style={{ transform: `scale(${scale})` }}
+      >
         {steps.map((_, i) => (
           <div
             key={i}
@@ -124,18 +141,19 @@ export default function ProgressCircle() {
       </div>
 
       {/* Step Content */}
-      <div className=" text-center flex justify-center items-center !bg-red-500">
+      <div className=" text-center flex justify-center items-center !bg-red-500 ">
         {steps.map((step, i) => (
           <div
             key={i}
             className="step-content absolute w-1/4  flex justify-center items-center flex-col gap-5  opacity-0 "
+            style={{ transform: `scale(${scale})` }}
           >
             <span className="block ">{`طراحی اختصاصی  - مرحله  ${
               i + 1
             } `}</span>
             <h2 className="text-6xl font-medium ">{step.title}</h2>
             <Image src="/loop.svg" alt="" width={250} height={400} />
-            
+
             <p>{step.desc}</p>
           </div>
         ))}
